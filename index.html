@@ -43,11 +43,7 @@
     }
     .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--text); }
     .nav-links { display: flex; gap: 2rem; }
-    .nav-links a {
-      color: var(--muted); text-decoration: none;
-      font-size: 0.9rem; font-weight: 500;
-      transition: color 0.2s;
-    }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--accent); }
 
     /* HERO */
@@ -128,24 +124,8 @@
     .exp-list { display: flex; flex-direction: column; }
     .exp-item { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
     .exp-item:first-child { border-top: 1px solid var(--border); }
-    .exp-logo {
-.exp-logo {
-      width: 120px; height: 40px; border-radius: 6px;
-      border: 1px solid var(--border);
-      overflow: hidden; margin-bottom: 0.75rem;
-      display: flex; align-items: center; justify-content: center;
-      background: #ffffff;
-    }
-    .exp-logo img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
-    .exp-logo-placeholder {
-      width: 52px; height: 52px; border-radius: 10px;
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'DM Mono', monospace; font-size: 0.8rem;
-      font-weight: 700; margin-bottom: 0.75rem;
-    }
     .exp-company { font-family: 'DM Mono', monospace; font-size: 0.82rem; color: var(--accent); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.3rem; }
-    .exp-date { font-size: 0.85rem; color: var(--muted); }
+    .exp-date { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
     .exp-title { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--text); margin-bottom: 0.85rem; }
     .exp-points { list-style: none; }
     .exp-points li { font-size: 0.93rem; color: var(--soft); padding: 0.3rem 0 0.3rem 1.25rem; position: relative; line-height: 1.65; }
@@ -155,21 +135,6 @@
     .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; background: var(--border); border: 1px solid var(--border); }
     .edu-card { background: var(--bg); padding: 2.5rem; transition: background 0.2s; }
     .edu-card:hover { background: var(--bg3); }
-    .edu-logo {
-      width: 52px; height: 52px; border-radius: 10px;
-      border: 1px solid var(--border);
-      overflow: hidden; margin-bottom: 1.25rem;
-      display: flex; align-items: center; justify-content: center;
-      background: var(--bg3);
-    }
-    .edu-logo img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
-    .edu-logo-placeholder {
-      width: 52px; height: 52px; border-radius: 10px;
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'DM Mono', monospace; font-size: 0.8rem;
-      font-weight: 700; margin-bottom: 1.25rem;
-    }
     .edu-school { font-family: 'DM Mono', monospace; font-size: 0.8rem; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; }
     .edu-degree { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--text); margin-bottom: 0.5rem; }
     .edu-detail { font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
@@ -223,7 +188,7 @@
     .tl-desc { font-size: 0.92rem; color: var(--muted); line-height: 1.75; max-width: 560px; }
     .tl-honest { font-size: 0.84rem; color: var(--accent); font-style: italic; margin-top: 0.5rem; }
 
-    /* AI PROJECTS IN JOURNEY */
+    /* AI PROJECTS MINI */
     .ai-projects-mini { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
     .ai-proj-mini { background: var(--bg3); border: 1px solid var(--border); padding: 1.25rem; border-radius: 4px; }
     .ai-proj-mini-title { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--text); margin-bottom: 0.4rem; }
@@ -253,7 +218,8 @@
       .stat { border-right: none; border-bottom: 1px solid var(--border); }
       .section-wrap { padding: 4rem 2rem; }
       .exp-item { grid-template-columns: 1fr; gap: 0.75rem; }
-      .projects-grid, .projects-grid-2, .edu-grid, .skills-grid, .ai-projects-mini { grid-template-columns: 1fr; }
+      .projects-grid, .projects-grid-2, .edu-grid, .ai-projects-mini { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
       .journey-section { padding: 4rem 2rem; }
       .contact-section { padding: 4rem 2rem; }
     }
@@ -329,10 +295,6 @@
 
         <div class="exp-item">
           <div>
-            <div class="exp-logo">
-              <img src="amazon.png" alt="Amazon" onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';" />
-            </div>
-            <div class="exp-logo-placeholder" style="display:none; background:rgba(255,153,0,0.12); color:#ff9900;">AMZ</div>
             <div class="exp-company">Amazon</div>
             <div class="exp-date">Jun – Aug 2025</div>
           </div>
@@ -350,10 +312,6 @@
 
         <div class="exp-item">
           <div>
-            <div class="exp-logo">
-              <img src="ltimindtree.png" alt="LTIMindtree" onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';" />
-            </div>
-            <div class="exp-logo-placeholder" style="display:none; background:rgba(0,128,0,0.12); color:#4CAF50;">LTI</div>
             <div class="exp-company">LTIMindtree</div>
             <div class="exp-date">Jun 2022 – Aug 2024</div>
           </div>
@@ -371,10 +329,6 @@
 
         <div class="exp-item">
           <div>
-            <div class="exp-logo">
-              <img src="ten.png" alt="The Entrepreneurship Network" onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';" />
-            </div>
-            <div class="exp-logo-placeholder" style="display:none; background:rgba(200,169,110,0.12); color:#c8a96e;">TEN</div>
             <div class="exp-company">The Entrepreneurship Network</div>
             <div class="exp-date">Apr – May 2021</div>
           </div>
@@ -402,10 +356,6 @@
       </div>
       <div class="edu-grid">
         <div class="edu-card">
-          <div class="edu-logo">
-            <img src="uiuc.png" alt="UIUC" onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';" />
-          </div>
-          <div class="edu-logo-placeholder" style="display:none; background:rgba(19,41,75,0.4); color:#4b9cd3;">UIUC</div>
           <div class="edu-school">University of Illinois Urbana-Champaign</div>
           <div class="edu-degree">MS Information Management</div>
           <div class="edu-detail">
@@ -416,16 +366,12 @@
           <div class="edu-gpa">GPA 3.95 / 4.0</div>
         </div>
         <div class="edu-card">
-          <div class="edu-logo">
-            <img src="mumbai.png" alt="University of Mumbai" onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';" />
-          </div>
-          <div class="edu-logo-placeholder" style="display:none; background:rgba(200,169,110,0.12); color:#c8a96e;">MU</div>
           <div class="edu-school">University of Mumbai</div>
-          <div class="edu-degree">BE Electronics and Telecommunications</div>
+          <div class="edu-degree">BE Computer Engineering</div>
           <div class="edu-detail">
             Bachelor of Engineering<br/>
             Graduated Jun 2022 · Mumbai, India<br/><br/>
-            Foundation in Machine Learning, Database Management Systems, and Cloud Computing.
+            Coursework: Machine Learning, Database Management Systems, Cloud Computing
           </div>
           <div class="edu-gpa">GPA 3.66 / 4.0</div>
         </div>
@@ -471,7 +417,7 @@
           <div class="proj-metric">
             <strong>3.4M+ orders</strong> analyzed across Azure pipeline<br/>
             <strong>5 Power BI dashboards</strong> with DAX<br/>
-            Identified bananas as top reorder product with 70K+ reorders
+            Identified top reorder product with 70K+ reorders
           </div>
           <div class="proj-pills">
             <span class="proj-pill">Azure Data Factory</span><span class="proj-pill">Power BI</span><span class="proj-pill">DAX</span><span class="proj-pill">Azure SQL</span><span class="proj-pill">Blob Storage</span>
@@ -502,7 +448,7 @@
           <div class="proj-num">04 / ML Research</div>
           <div class="proj-domain">scikit-learn · Classification · Evaluation</div>
           <div class="proj-title">Breast Cancer ML Classifier Evaluation</div>
-          <div class="proj-desc">Benchmarked and tuned 4 classifiers using cross-validation and ROC analysis. Achieved 99.1% accuracy and 0.99 ROC-AUC with tuned SVM. Compared interpretability vs performance to guide evidence-based model selection.</div>
+          <div class="proj-desc">Benchmarked and tuned 4 classifiers using cross-validation and ROC analysis. Achieved 99.1% accuracy and 0.99 ROC-AUC with tuned SVM. Compared interpretability vs performance to guide model selection.</div>
           <div class="proj-metric">
             <strong>99.1% accuracy</strong> · ROC-AUC 0.99 with tuned SVM<br/>
             4 classifiers benchmarked via GridSearchCV<br/>
@@ -518,7 +464,7 @@
           <div class="proj-num">05 / Analytics</div>
           <div class="proj-domain">R · Regression · Supply Chain</div>
           <div class="proj-title">Fast Fashion Supply Chain Optimization</div>
-          <div class="proj-desc">Joined 4 supply chain datasets with 82K+ records to analyze shipping delays, warehouse selection, and logistics cost drivers. Built regression model predicting total shipping and production costs. Identified optimal warehouse and factory routing.</div>
+          <div class="proj-desc">Joined 4 supply chain datasets with 82K+ records to analyze shipping delays, warehouse selection, and logistics cost drivers. Regression model predicting total shipping and production costs across 20 warehouses and 5 factories.</div>
           <div class="proj-metric">
             <strong>82K+ records</strong> across 20 warehouses and 5 factories<br/>
             <strong>R squared 0.64</strong> regression model<br/>
@@ -567,7 +513,7 @@
           </div>
         </div>
         <div class="skill-block">
-          <div class="skill-block-title">Data Platforms and Cloud</div>
+          <div class="skill-block-title">Cloud and Platforms</div>
           <div class="skill-tags">
             <span class="skill-tag">Snowflake</span>
             <span class="skill-tag">AWS Redshift</span>
